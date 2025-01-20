@@ -1,32 +1,113 @@
-# NYC Taxi Fare Regression Analysis:
+# NYC Taxi Fare Regression Analysis
 
-This project analyzes New York City Taxi data to predict taxi fares based on trip characteristics. Using data cleaning, feature engineering, and regression modeling, it aims to uncover key factors influencing fares and build a predictive model.
+## Project Overview
 
-## Features:
+This project focuses on predicting taxi fares in New York City using regression analysis. The dataset used contains detailed information on trips, including pickup and dropoff locations, timestamps, and trip distances. The goal is to build and evaluate regression models that accurately predict taxi fares based on these features.
 
-### Data Cleaning:
+## Table of Contents
 
-- Removed missing and duplicate entries.
-- Corrected data types and handled outliers in trip-related features.
+1. [Dataset](#dataset)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Contributing](#contributing)
 
-### Feature Engineering:
+## Dataset
 
-- Calculated trip duration and other relevant metrics.
-- Transformed skewed distributions using log transformations.
+The dataset used in this project is from Kaggle. You can download it here: [New York City Taxi and Limousine Project Dataset](https://www.kaggle.com/datasets/raminhuseyn/new-york-city-taxi-and-limousine-project?select=New+York+City+TLC+Data.csv).
 
-### Exploratory Data Analysis (EDA):
+## Installation
 
-- Visualized relationships between trip features and fares.
-- Identified patterns in fare distributions and user behavior.
+To set up this project locally, follow these steps:
 
-### Regression Modeling:
+1. **Clone the repository:**
 
-- Built linear regression models to predict fare amounts based on trip distance, time, and passenger count.
-- Evaluated models using metrics like MSE and R².
+   ```bash
+   git clone https://github.com/Ziad-Shalaby/NYC-Taxi-Fare-Regression-Analysis.git
+   ```
 
-### Interactive Visualizations:
+2. **Navigate to the project directory:**
 
-- Used Seaborn, Matplotlib, and Plotly to create insightful visualizations.
+   ```bash
+   cd NYC-Taxi-Fare-Regression-Analysis
+   ```
 
-#### Dataset link:
-https://www.kaggle.com/datasets/raminhuseyn/new-york-city-taxi-and-limousine-project?select=New+York+City+TLC+Data.csv
+3. **Create a virtual environment:**
+
+   ```bash
+   python -m venv env
+   ```
+
+4. **Activate the virtual environment:**
+
+   - On Windows:
+
+     ```bash
+     env\Scripts\activate
+     ```
+
+   - On macOS and Linux:
+
+     ```bash
+     source env/bin/activate
+     ```
+
+5. **Install the required dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. **Run the Jupyter Notebook:**
+
+   Launch the notebook server:
+
+   ```bash
+   jupyter notebook
+   ```
+
+2. **Open the analysis notebook:**
+
+   Navigate to the `.ipynb` file to explore the data analysis and regression modeling process.
+
+3. **Explore the results:**
+
+   The notebook includes detailed visualizations, feature engineering, and model evaluation steps.
+
+## Features
+
+- **Data Cleaning and Preprocessing:** Handle missing values, outliers, and feature transformations.
+- **Exploratory Data Analysis (EDA):** Visualize trip patterns, fare distributions, and geographic insights.
+- **Regression Modeling:** Train and evaluate models such as Linear Regression, Random Forest, and Gradient Boosting.
+- **Hyperparameter Tuning:** Optimize model performance using grid search and cross-validation.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. **Fork the repository.**
+2. **Create a new branch:**
+
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+
+4. **Push to the branch:**
+
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **Open a pull request.**
+
+---
+
+Thank you for exploring the NYC Taxi Fare Regression Analysis project! Your feedback and contributions are greatly appreciated.
